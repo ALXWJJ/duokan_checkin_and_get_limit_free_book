@@ -35,7 +35,7 @@ class DuoKan:
 
     def get_free(self):
         r = self.session.get(
-            self.URL+'/hs/v4/channel/query/403', headers=self.headers)
+            self.URL+'/hs/v4/channel/query/2027', headers=self.headers)
         bookid = r.json()["items"][0]["data"]["data"][0]["data"]["book_id"]
 
         param = {
